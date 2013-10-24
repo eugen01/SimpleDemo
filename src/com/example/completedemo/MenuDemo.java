@@ -29,7 +29,6 @@ public class MenuDemo extends SherlockListActivity {
 	
 	public static final int MENU_ADD = Menu.FIRST+1;
 	public static final int MENU_RESET = Menu.FIRST+2;
-	public static final int MENU_CAP = Menu.FIRST+3;
 	public static final int MENU_REMOVE = Menu.FIRST+4;
 	
 	@Override
@@ -110,13 +109,6 @@ public class MenuDemo extends SherlockListActivity {
 
 		
 		switch(item.getItemId()){
-			case MENU_CAP:{
-				String word = words.get(info.position);
-				word.toUpperCase(Locale.getDefault());
-				adapter.remove(words.get(info.position));
-				adapter.add(word);
-				return true;
-			}
 			
 			case MENU_REMOVE:{
 				adapter.remove(words.get(info.position));
@@ -133,7 +125,6 @@ public class MenuDemo extends SherlockListActivity {
 	@Override
 	public void onCreateContextMenu(ContextMenu menu , View v , ContextMenu.ContextMenuInfo menuInfo){
 		
-		menu.add(Menu.NONE,MENU_CAP,Menu.NONE,"Capitalize");
 		menu.add(Menu.NONE,MENU_REMOVE,Menu.NONE,"Remove");
 
 	}

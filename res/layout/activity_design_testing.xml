@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:tabStripEnabled="true" >
+
+        </TabWidget>
+         
+        <FrameLayout android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        
+    	    <LinearLayout
+    	        android:id="@+id/tab2"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="match_parent"
+    	        android:layout_margin="1dp"
+    	        android:orientation="vertical" >
+
+        		<LinearLayout 
+        			android:orientation="horizontal" 
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        		>
+				<Button
+					android:id="@+id/bA"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_margin="3dp"
+					android:text="1"
+					android:background="@android:color/holo_blue_dark"
+					android:onClick="#"
+				/>
+				<Button
+					android:id="@+id/bB"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_margin="3dp"
+					android:text="2"
+					android:background="@android:color/holo_green_dark"
+				/>
+				
+
+    	        
+ 	       		</LinearLayout>
+ 	       		
+        		<Button 
+        			android:id="@+id/bC"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_margin="3dp"
+        			android:background="@android:color/holo_blue_bright"
+        			android:text="3"
+        			
+        		/>
+        		
+        		<LinearLayout 
+        			android:orientation="horizontal"
+        			android:layout_height="wrap_content"
+        			android:layout_width="fill_parent"
+        		>
+        		    
+        		    <Button 
+        		    	android:id="@+id/bD"
+        		    	android:layout_height="wrap_content"
+        		    	android:layout_width="0dp"
+        		    	android:layout_weight="1"
+        		    	android:layout_margin="3dp"
+        		    	android:text="4"
+        		    	android:background="@android:color/holo_green_light"
+        		    />
+        		    <Button 
+        		    	android:id="@+id/bE"
+        		    	android:layout_width="0dp"
+        		    	android:layout_height="wrap_content"
+        		    	android:layout_weight="1"
+        		    	android:layout_margin="3dp"
+        		    	android:text="5"
+        		    	android:background="@android:color/holo_red_light"
+        		    />
+        		    
+        		    
+        		</LinearLayout>
+        		
+        		<LinearLayout 
+        		    android:orientation="horizontal"
+        		    android:layout_height="200dp"
+        		    android:layout_width="fill_parent"
+        		    android:baselineAligned="false"
+        		    
+        		    >
+        		
+  		      		<LinearLayout
+        				android:orientation="vertical"
+        				android:layout_width="0dp"
+        				android:layout_weight="1"
+        				android:layout_height="fill_parent"  
+        			>
+        		    <Button 
+        		    	android:id="@+id/bG"
+        		    	android:layout_width="fill_parent"
+        		    	android:layout_height="0dp"
+        		    	android:layout_weight="1"
+        		    	android:layout_margin="3dp"
+        		    	android:text="6"
+        		    	android:background="@android:color/holo_green_dark"
+        		    />
+        		    <Button 
+        		    	android:id="@+id/bH"
+        		    	android:layout_width="fill_parent"
+        		    	android:layout_height="0dp"
+        		    	android:layout_weight="2"
+        		    	android:layout_margin="3dp"
+        		    	android:text="7"
+        		    	android:background="@android:color/holo_purple"
+        		    />
+        			</LinearLayout>
+        	
+  		      		<LinearLayout 
+        				android:orientation="vertical"
+        				android:layout_width="0dp"
+        				android:layout_weight="1"
+        				android:layout_height="fill_parent"     
+        			>
+        		    <Button 
+        		    	android:id="@+id/bI"
+        		    	android:layout_width="fill_parent"
+        		    	android:layout_height="0dp"
+        		    	android:layout_weight="2"
+        		    	android:layout_margin="3dp"
+        		    	android:text="8"
+        		    	android:background="@android:color/holo_orange_dark"
+        		    />
+        		    <Button 
+        		    	android:id="@+id/bJ"
+        		    	android:layout_width="fill_parent"
+        		    	android:layout_height="0dp"
+        		    	android:layout_weight="1"
+        		    	android:layout_margin="3dp"
+        		    	android:text="9"
+        		    	android:background="@android:color/holo_orange_light"
+        		    />
+        			</LinearLayout>
+        		</LinearLayout>
+        	    
+        	</LinearLayout>
+            
+        	<LinearLayout
+            	android:id="@+id/tab1"
+            	android:orientation="vertical"
+ 	        	android:layout_height = "fill_parent"
+ 	        	android:layout_width = "fill_parent"
+    	    >
+				<TextView
+  		      	   android:id ="@+id/label_tab1"
+       		 	   android:layout_height="wrap_content"
+       		 	   android:layout_width="fill_parent"
+        		   android:text="!!Warning: Pointless button!!"
+        		   android:textSize="20dp"
+        		/>
+
+ 	   		    <Button
+	   		     	android:id="@+id/button_tab1"
+ 	        		android:layout_width="fill_parent"
+ 	 	    		android:layout_height="wrap_content"
+        			android:text="Useless Button" 
+        			android:onClick="b1ButtonPressed"
+        			android:layout_marginTop="7dp"
+        		/>
+            	
+     	   </LinearLayout>	          	
+        </FrameLayout> 
+     </LinearLayout>   
+
+</TabHost>

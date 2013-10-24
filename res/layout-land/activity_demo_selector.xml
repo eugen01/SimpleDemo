@@ -1,0 +1,75 @@
+    <TableLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:paddingBottom="@dimen/activity_vertical_margin"
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+ 	    android:paddingRight="@dimen/activity_horizontal_margin"
+ 	    android:paddingTop="@dimen/activity_vertical_margin"
+   		tools:context=".DemoSelector"    		
+    >
+    	
+    	<TableRow android:layout_width="fill_parent">
+    	    
+    	    	<Button
+    			android:id="@+id/buton_d1"
+    			style="?android:attr/buttonBarButtonStyle"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/button1"
+    			android:onClick="startDemo1"
+    			android:drawableLeft="@drawable/device_access_storage"
+    		/>
+    		
+    		<Button 
+    			android:id="@+id/buton_d2"
+    			style="?android:attr/buttonBarButtonStyle"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/button2"
+    			android:onClick="startDemo2"
+    			android:drawableLeft="@drawable/content_paste"
+    		/>
+    	</TableRow>
+    	<TableRow>
+    		<Button 
+    			android:id="@+id/buton_d3"
+  				style="?android:attr/buttonBarButtonStyle"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/button3"
+    			android:onClick="startDemo3"
+    			android:drawableLeft="@drawable/hardware_gamepad"
+    		/>
+    		<Button 
+    			android:id="@+id/buton_d4"
+    			style="?android:attr/buttonBarButtonStyle"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/button4"
+    			android:onClick="startDemo4"
+    			android:drawableLeft="@drawable/ic_search_icon"
+    		/>
+    	</TableRow>	
+    	<TableRow>
+    		<Button
+    			android:id="@+id/buton_d5"
+    			style="?android:attr/buttonBarButtonStyle"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/button5"
+    			android:onClick ="startDemo5"
+    			android:drawableLeft="@drawable/images_crop"
+    		/>
+    		<Button
+    			android:id="@+id/buton_d6"
+    			style="?android:attr/buttonBarButtonStyle"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:text="@string/button6"
+    			android:onClick = "startDemo6"
+    		/>
+    	</TableRow>
+    		
+	</TableLayout>

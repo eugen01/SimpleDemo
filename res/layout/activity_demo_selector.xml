@@ -1,0 +1,85 @@
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    tools:context=".DemoSelector"
+    >
+
+    	<TableRow
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+		>
+
+    		<Button
+    		    android:id="@+id/buton_d1"
+    		    android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    		    android:drawableLeft="@drawable/device_access_storage"
+    		    android:onClick="startDemo1"
+    		    android:text="@string/button1" />
+    		
+    	</TableRow>	
+    	<TableRow>
+    		<Button 
+    			android:id="@+id/buton_d2"
+    			android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    			android:text="@string/button2"
+    			android:onClick="startDemo2"
+    			android:drawableLeft="@drawable/content_paste"
+    		/>
+    	</TableRow>
+    	<TableRow>
+    		<Button 
+    			android:id="@+id/buton_d3"
+    			android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    			android:text="@string/button3"
+    			android:onClick="startDemo3"
+    			android:drawableLeft="@drawable/hardware_gamepad"    			
+    		/>
+    	</TableRow>
+    	<TableRow>
+    		<Button 
+    			android:id="@+id/buton_d4"
+    			android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    			android:text="@string/button4"
+    			android:onClick="startDemo4"
+    			android:drawableLeft="@drawable/ic_search_icon"
+    		/>
+    	</TableRow>	
+    	<TableRow>
+    		<Button
+    			android:id="@+id/buton_d5"
+    			android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    			android:text="@string/button5"
+    			android:onClick ="startDemo5"
+    			android:drawableLeft="@drawable/images_crop"
+    		/>
+    	
+    	</TableRow>
+    	<TableRow>
+    		<Button
+    			android:id="@+id/buton_d6"
+    			android:layout_width="0dp"
+    		    android:layout_height="wrap_content"
+    		    android:layout_weight="1"
+    			android:text="@string/button6"
+    			android:onClick = "startDemo6"
+    		/>
+    	</TableRow>
+    		
+	</TableLayout>
+
+
+
